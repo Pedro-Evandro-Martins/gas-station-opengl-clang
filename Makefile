@@ -1,3 +1,6 @@
+#Misc Variables
+LIBNAME = mygl
+
 # Paths
 APPS = ./apps
 BIN = ./bin
@@ -9,7 +12,7 @@ SRC = ./src
 # Compiler flags
 CC = gcc
 FLAGS = -O3 -Wall
-LIBS = -lGL -lGLU -lglut -lm -lmygl -L $(LIB)
+LIBS = -lGL -lGLU -lglut -lm -l$(LIBNAME) -L $(LIB)
 
 SRCS = $(wildcard $(SRC)/*.c)
 OBJS = $(patsubst $(SRC)/%.c, $(OBJ)/%.o, $(SRCS))
@@ -19,7 +22,7 @@ all: \
 	app
 
 build: $(OBJS)
-		ar -rcs  $(LIB)/libds.a $(OBJS)
+		ar -rcs  $(LIB)/lib$(LIBNAME).a $(OBJS)
 
 app: clean_apps \
 	$(BIN)/app
