@@ -1,0 +1,18 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-O3",
+      "-Wall",
+      "-I",
+      "./include",
+      "-o",
+      "bin/app",
+      "apps/app.c"
+    ],
+    "directory": "/home/pedro/Documents/programming/c/opengl/ft-cg/posto-de-combustivel-1/gas-station-opengl-clang",
+    "file": "/home/pedro/Documents/programming/c/opengl/ft-cg/posto-de-combustivel-1/gas-station-opengl-clang/apps/app.c",
+    "output": "/home/pedro/Documents/programming/c/opengl/ft-cg/posto-de-combustivel-1/gas-station-opengl-clang/bin/app"
+  }
+]
